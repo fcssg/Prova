@@ -11,7 +11,7 @@ a menor quantidade de linhas de código, devido a isso foi escolhida.
 Primeiro é verificado se o número é divisível por 15 (sendo múltiplo de 3 e 5)
 Caso não seja multiplo de ambos simultaneamente, é validado se ele é múltiplo 
 de 3, caso não seja, se ele é multiplo de 5. Em caso negativo, é impresso o 
-número do contador, pois o número informado náo deve ser substituído por Foo, 
+número do contador, pois o número informado não deve ser substituído por Foo, 
 Baa ou FooBaa.
 
 --------------------------------------------------------------------------------
@@ -22,15 +22,14 @@ Compilar e executar o arquivo Ex3_ConcatERemove.java
 Informar a string inicial, a string desejada e um número inteiro que representa 
 o número de operações.
 Caso a string informada não atenda os critérios descritos, o retorno será "não".
-As variaveis de entrada devem possuir entre 1 e 100 caracteres minúsculos e não
-numéricos. 
+As variaveis de entrada devem possuir entre 1 e 100 caracteres minúsculos. 
 Verifica os caracteres da string inicial comparando com a string desejada um a 
 um, substituindo e contando a quantidade de vezes que isso ocorre (passos), 
 não contando quando o caracter for igual. 
 Se a quantidade de passos for maior do que o numero de operações informado, 
 retorna "não".
 Após as substituições, verifica o tamanho da string desejada. Se a quantidade
-de caracteres da strinf desejada for menor do que da string inicial, ele remove 
+de caracteres da string desejada for menor do que da string inicial, ele remove 
 os caracteres somando um a cada removido na quantidade de passos.
 Se a quantidade de passos final for maior do que o informado na variável 
 operações, retorna "não".
@@ -83,7 +82,7 @@ END;
 >> SOLUÇÃO
 
 Foram criadas duas queries.
-A primeira query retorna os registros com notas maiores ou igual a 8,já com
+A primeira query retorna os registros com notas maiores ou igual a 8, já com
 a ordenação decrescente por nota e nome em ordem alfabética.
 Essa primeira query é unida a segunda query, que traz todos os registros com 
 notas abaixo de 8 particionadas pela nota, realizando um rank das mesmas, 
@@ -168,7 +167,7 @@ END;
 
 Ao executar a consulta utilizando union, são trazidos todos os registros da 
 tabela cats e da tabela dogs com dados distintos das duas tabelas, pois o union 
-resulta em uma consulta sem dados duplicados e ordenada por padrão (default).
+resulta em uma consulta sem dados duplicados e ordenada por default.
 Isso é um ponto positivo para alguns casos pois o distinct e a ordenaçao acontecem 
 implicitamente, porém é um ponto negativo na questao performatica da query.
 No caso do exercício, esse impacto não é um ponto relevante visto a quantidade de 
